@@ -1,0 +1,45 @@
+header{
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+header p{
+    padding: 2rem;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+
+}
+
+nav a{
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.main-content{
+    background-color: gray;
+    padding: 5rem;
+}
+
+.aside-content{
+    background-color: darkgray;
+    padding: 5rem;
+}
+
+footer{
+    background-color: rgb(53, 53, 53);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
