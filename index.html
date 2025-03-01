@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rian Cardoso Christani | WDD131</title>
-    <link rel="stylesheet" href="week01/styles/layout.css">
+    <title>WDD 131 – Dynamic Web Fundamentals - Rian Cardoso Christani</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Rian Cardoso Christani, first week assignment">
+    <meta name="author" content="Rian Cardoso Christani">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
     <header>
-        <p>Header Content</p>
+        <div class="principal-title">
+            <h2>WDD 131: Dynamic Web Fundamentals - <span class="smaller-title">Rian Cardoso Christani</span></h2>
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="https://www.linkedin.com/in/rianchristani/">Linkedin</a>
+            <a href="https://byupw.instructure.com/.">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/7?lang=por&id=p26#p26">Scripture</a>
+            <a href="https://www.google.com/">Final Project</a>
         </nav>
     </header>
-    <main>
-        <div class="main-content">
-            <p>Main Content</p>
-        </div>
-        <div class="aside-content">
-            <p>Aside Content</p>
-        </div>
-    </main>
+    <div id="central-infos">
+        <main>
+            <section class="card">
+                    <h3>About Me</h3>
+                    <div class="about-me">
+                    <p class="my-info">Hi, I'm Rian! I live in Brazil and I'm passionate about video games. Currently, I'm studying Software Development at BYU-Idaho. In addition to gaming and coding, I love traveling and photography. Exploring new places and capturing memorable moments really excites me.</p>
+                    <img src="images/rian-image.jpg" alt="Foto Rian">
+                    <h3 class="country-name">Paraná, Brazil</h3>
+                    <figure>
+                        <img src="images/brazil-flag.png" alt="Brazil flag">
+                        <figcaption> Official Flag od Brazil</figcaption>
+                    </figure>
+                    <p>Brazil is the largest country in South America, home to the Amazon Rainforest and the vibrant Carnival festival. It is a biodiverse country with a rich culture and a strong economy. Football is the most popular sport, and the nation has won the FIFA World Cup five times. Iconic landmarks include the Christ the Redeemer statue and Iguazu Falls.</p>
+                </div>
+            </section>
+            <section class="card">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/?srsltid=AfmBOoo4RXemEPPIMxcILWDpekSoCBa4devhDxKNNnBQhvCkL5rFaWlr">Udemy</a></li>
+                    <li><a href="https://placehold.co/">Image Placeholder</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
     <footer>
-        <p>Footer Content</p>
+        <p>&copy;<span id="currentyear"></span> 📸 Rian Cardoso Christani 📸 Brazil - PR</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
