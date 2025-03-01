@@ -5,7 +5,7 @@
     --tiffanyblue: #a2e8dd;
 }
 
-h2, h3{
+h1, h2, h3{
     font-family: "Roboto", serif;
     font-weight: 800;
     font-style: normal;
@@ -22,7 +22,7 @@ p, a{
 }
 
 .smaller-title{
-    font-size: 17px;
+    font-size: 20px;
     color: yellow;
 }
 
@@ -71,7 +71,7 @@ main{
 
 }
 
-.card h3{
+.card h2{
     background-color: var(--darkslategray);
     padding: .5rem;
     margin: 0;
@@ -98,7 +98,7 @@ main{
     border: 1px solid var(--slategray);
 }
 
-.about-me h3{
+.about-me h2{
     grid-row: 2/3;
     grid-column: 1/3;
     background-color: white;
