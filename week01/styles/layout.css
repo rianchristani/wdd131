@@ -8,17 +8,16 @@ header p{
 }
 
 nav{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+    display: flex;
     background-color: black;
-
 }
 
 nav a{
-    padding: 1rem;
+    padding: 1.5rem;
     color: white;
     text-decoration: none;
     text-align: center;
+    flex: 1rem;
 }
 
 main{
