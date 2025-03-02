@@ -1,5 +1,10 @@
 /* large view (like PC) */
 @media (min-width: 37.5rem){
+
+    .images-temples{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     #menu{
         display: none;
     }
