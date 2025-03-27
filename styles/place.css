@@ -3,12 +3,40 @@
 
 #sun-weather{
     position: absolute;
-    bottom: 9.2rem;
-    right: 4rem;
+    bottom: 7.2rem;
+    right: 15.5rem;
+}
+
+#data{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 0rem;
+    box-shadow: none;
+    border: none;
+}
+
+#data h1{
+    text-align:center;
+    background-color: white;
+    color: black;
+    margin-left: 2.5rem;
 }
 
 #weather{
-    position: absolute;
-    bottom: -2rem;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    bottom: 0rem;
 }
+
+#weather h1{
+    position: relative;
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-left: 3.5rem;
+    bottom: 1rem;
+}
+
 }

@@ -45,7 +45,7 @@ h1, .label{
 
 #sun-weather{
     position: absolute;
-    bottom: 9.2rem;
+    bottom: 9.3rem;
     right: 4rem;
 }
 
@@ -53,7 +53,7 @@ h1, .label{
     position: relative;
     background-color: rgba(3, 49, 46, 0.8);
     color: white;
-    padding: 1rem;
+    padding: 1.2rem;
     right: 2rem;
     bottom: .5rem;
 }
@@ -82,19 +82,15 @@ footer{
     margin-top: .5rem;
 }
 
-.test {
-    display: flex;
-    align-items: center; /* Centraliza os itens horizontalmente */
-    gap: 1rem; /* Espaçamento entre os quadrados */
-}
+
 
 #data {
     position: absolute;
-    max-width: 600px; /* Limite de largura para telas maiores */
+    max-width: 600px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    border: 1px solid var(--darkGreen); /* Adiciona borda para destaque */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    border: 1px solid var(--darkGreen);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     margin: 1.5rem;
     bottom: 15rem;
@@ -102,11 +98,11 @@ footer{
 
 #weather {
     position: absolute;
-    max-width: 600px; /* Limite de largura para telas maiores */
+    max-width: 600px; 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem;
-    border: 1px solid var(--darkGreen); /* Adiciona borda para destaque */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    border: 1px solid var(--darkGreen); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     margin: 1.5rem;
     bottom: 15rem;
     right: 1rem;
