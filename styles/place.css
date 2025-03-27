@@ -1,0 +1,14 @@
+/* large view (like PC) */
+@media (max-width: 700px){
+
+#sun-weather{
+    position: absolute;
+    bottom: 9.2rem;
+    right: 4rem;
+}
+
+#weather{
+    position: absolute;
+    bottom: -2rem;
+}
+}

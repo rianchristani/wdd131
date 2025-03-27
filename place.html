@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rian Cardoso Christani">
     <meta name="description" content="Something here to change after">
-    <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
     <title>Week 03 - Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,23 +22,73 @@
     <main>
         <div class="hero">
             <picture>
-                <source srcset="images/1200.webp" media="min-width: 1000px">
-                <source srcset="images/700.webp" media="min-width: 700px">
-                <img src="images/computer.webp" alt="Queenstown" width="400">
+                <source srcset="images/1200.webp" media="(min-width: 1000px)">
+                <source srcset="images/700.webp" media="(min-width: 700px)">
+                <img src="images/phone.webp" alt="Queenstown" width="400">
             </picture>
         </div>
-        <aside class="info" id="data">
-            <h1>Data</h1>
-            <p>Area: 0000000 <br> Population: 0000000 <br> Capital:0000000 <br> etc...</p>
+        <div class="test">
+            <aside class="info" id="data">
+                <h1>Data</h1>
+                <div class="line">
+                    <span class="label">Area:</span>
+                    <span class="value">8,705 km²</span>
+                </div>
+                <div class="line">
+                    <span class="label">Population:</span>
+                    <span class="value">52,400</span>
+                </div>
+                <div class="line">
+                    <span class="label">Country:</span>
+                    <span class="value">New Zealand</span>
+                </div>
+                <div class="line">
+                    <span class="label">Languages:</span>
+                    <span class="value">Māori, English</span>
+                </div>
+                <div class="line">
+                    <span class="label">Currency:</span>
+                    <span class="value">New Zealand Dollar</span>
+                </div>
+                <div class="line">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">GMT+13</span>
+                </div>
+                <div class="line">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+64</span>
+                </div>
+                <div class="line">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.nz</span>
+                </div>
+            </div>            
         </aside>
         <aside class="info" id="weather">
             <h1>Weather</h1>
             <img id="sun-weather" src="images/sul.svg" alt="sun">
-            <p>Area: 0000000 <br> Population: 0000000 <br> Capital:0000000 <br> etc...</p>
+            <div class="line">
+                <span class="label">Temperature:</span>
+                <span class="value">11°C</span>
+            </div>
+            <div class="line">
+                <span class="label">Conditions:</span>
+                <span class="value">Partly Cloudy</span>
+            </div>
+            <div class="line">
+                <span class="label">Wind:</span>
+                <span class="value">3 km/h</span>
+            </div>
+            <div class="line">
+                <span class="label">Wind Chill:</span>
+                <span class="value" id="windChill"></span>
+            </div>
+        
         </aside>
     </main>
     <footer>
-
+        <p>&copy;<span id="currentyear"></span> 📸 Rian Cardoso Christani 📸 Brazil - PR</p>
+        <p class="lastM">Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
