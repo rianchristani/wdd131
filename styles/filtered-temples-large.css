@@ -1,0 +1,35 @@
+/* large view (like PC) */
+@media (min-width: 37.5rem){
+
+    .grid{
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation .options{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        padding: .5rem;
+        align-items: center;
+        background-color: rgb(4, 4, 41);
+        color: white;
+    }
+    
+    header h1{
+        flex: auto;
+    }
+}
+
