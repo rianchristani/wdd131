@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="something here">
+    <meta name="author" content="Rian Cardoso Christani">
+    <title>Document</title>
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <main>
+        <form action="review.html" method="get">
+            <label>Product Name
+                <select name="productName" id="productName" required> 
+                    <option value="select" disabled selected>Select a Product ... </option >
+                        <!-- each option will be added in the js -->
+                </select>
+            </label>
+
+            <label>Overall Rating
+                <input type="radio" value="rating" name="rating" id="rating" required>&star;
+                <input type="radio" value="rating" name="rating" id="rating">&star;&star;
+                <input type="radio" value="rating" name="rating" id="rating">&star;&star;&star;
+                <input type="radio" value="rating" name="rating" id="rating">&star;&star;&star;&star;
+                <input type="radio" value="rating" name="rating" id="rating">&star;&star;&star;&star;&star;
+            </label>
+
+            <label>
+                Date of Installation <input type="date" name="dateCalendar" id="dateCalendar" required>
+            </label>
+
+            <label> Which features did you find useful in the product? (Check all that apply)
+                <input type="checkbox" name="features" id="features" value="features"> Durability
+                <input type="checkbox" name="features" id="features" value="features"> Ease of use
+                <input type="checkbox" name="features" id="features" value="features"> Performance
+                <input type="checkbox" name="features" id="features" value="features"> Design
+            </label>
+
+            <label>
+                Written Review<textarea name="review" id="review"></textarea>
+            </label>
+              <!-- Adicinar a parte (optional) no css depois-->
+            <label>
+                Your Name <input type="text" name="name" id="name">
+            </label>
+
+            <label>
+                <input type="submit" name="submit" id="submit" value="Post Review">
+            </label>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
