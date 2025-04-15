@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="title" content="Christani's painting">
+    <meta name="description" content="Made by professinals">
+    <script src="project.js" defer></script>
+    <link rel="stylesheet" href="project-small.css">
+</head>
+<body>
+    <h1>Christani's Painting</h1>
+    <div class="navigation">
+        <nav>
+            <a href="home.html">Home Page</a>
+            <a href="budget.html">Budget</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </div>
+    <main>
+        <section>
+            <h1>Leave a message to us</h1>
+            <form id="form" action="submited.html" method="get">
+                <label for="fName">First Name:
+                    <input type="text" name="fName" id="fName" required>
+                </label>
+                <label for="lName">Last Name:
+                    <input type="text" name="lName" id="lName" required>
+                </label>
+                <label for="email">E-mail:
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label for="subject">Subject:
+                    <select name="subject" id="subject">
+                        <option value="" disabled selected>Select a subject...</option>
+                    </select>
+                </label>
+                <label>Your message:
+                    <textarea name="message" id="message"></textarea>
+                </label>
+
+                <input type="submit" name="submit" id="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 📸 Rian Cardoso Christani 📸 Brazil - PR</p>
+    </footer>
+</body>
+</html>
