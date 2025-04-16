@@ -1,0 +1,8 @@
+*{
+    text-align: center;
+}
+
+section{
+    border: 2px dotted black;
+    margin: 1rem;
+}
