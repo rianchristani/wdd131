@@ -5,66 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <meta name="title" content="Christani's painting">
-    <meta name="description" content="Made by professinals">
-    <script src="project.js" defer></script>
-    <link rel="stylesheet" href="project-small.css">
-    <link rel="stylesheet" href="project-large.css">
+    <meta name="description" content="Made by professionals">
+    <script src="scripts/project.js" defer></script>
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <section class="header">
         <h1>Welcome! A place where your dreams come to life in vibrant colors.</h1>
-        <img src="logo.svg" alt="logo">
+        <img src="images/logo.svg" alt="logo">
 
-    <div class="navigation">
-        <nav>
-            <a href="home.html">Home Page</a>
-            <a href="budget.html">Budget</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+        <div class="navigation">
+            <nav>
+                <a href="home.html">Home Page</a>
+                <a href="budget.html">Budget</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
     </section>
 
-    </div>
     <main>
         <section class="form">
-            <fieldset>
-            <legend>Leave a message to us</legend>
+
             <form id="form" action="submited.html" method="get">
-                <label for="fName">First Name: <br>
-                    <input type="text" name="fName" id="fName" required>
-                </label>
-                <label for="lName">Last Name: <br>
-                    <input type="text" name="lName" id="lName" required>
-                </label>
-                <label for="email">E-mail: <br>
-                    <input type="email" name="email" id="email" required>
-                </label>
+                <fieldset>
+                    <legend>Leave a message to us</legend>
+                    <label for="fName">First Name: <br>
+                        <input type="text" name="fName" id="fName" required>
+                    </label>
+                    <label for="lName">Last Name: <br>
+                        <input type="text" name="lName" id="lName" required>
+                    </label>
+                    <label for="email">E-mail: <br>
+                        <input type="email" name="email" id="email" required>
+                    </label>
 
-                <!-- Subjects -->
-                <label for="subject">Subject: <br>
-                    <select name="subject" id="subject">
-                        <option value="" disabled selected>Select a subject...</option>
-                        <option>Request a Quote</option>
-                        <option>Schedule a Consultation</option>
-                        <option>General Inquiry</option>
-                        <option>Project Status Update</option>
-                        <option>Color and Finish Advice</option>
-                        <option>Service Availability</option>
-                        <option>Customer Feedback</option>
-                        <option>Report an Issue</option>
-                        <option>Partnership or Business Inquiry</option>
-                        <option>Employment Opportunities</option>                    
-                    </select>
-                </label>
+                    <!-- Subjects -->
+                    <label for="subject">Subject: <br>
+                        <select name="subject" id="subject">
+                            <option value="" disabled selected>Select a subject...</option>       
+                        </select>
+                    </label>
 
-                <label>Your message: <br>
-                    <textarea name="message" id="message" required></textarea>
-                </label>
+                    <label>Your message: <br>
+                        <textarea name="message" id="message" required></textarea>
+                    </label>
 
-                <input type="submit" name="submit" id="submit" value="Send Message">
-            </fieldset>
+                    <input type="submit" name="submit" id="submit" value="Send Message">
+                </fieldset>
             </form>
         </section>
     </main>

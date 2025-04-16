@@ -133,9 +133,10 @@ footer{
 
 .checkboxes{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     margin: .5rem;
+    align-items: center;
 }
 
 .firstColumn{
@@ -156,6 +157,7 @@ footer{
 .checkboxes .secondColumn label{
     display: block;
     margin-bottom: 10px;
+
 }
 
 #creditCardLabel{

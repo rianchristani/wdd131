@@ -3,77 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
+    <title>Budget</title>
     <meta name="title" content="Christani's painting">
-    <meta name="description" content="Made by professinals">
-    <script src="project.js" defer></script>
-    <link rel="stylesheet" href="project-small.css">
-    <link rel="stylesheet" href="project-large.css">
+    <meta name="description" content="Made by professionals">
+    <script src="scripts/buget.js" defer></script>
+    <link rel="stylesheet" href="styles/project-small.css">
+    <link rel="stylesheet" href="styles/project-large.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <section class="header">
         <h1>Welcome! A place where your dreams come to life in vibrant colors.</h1>
-        <img src="logo.svg" alt="logo">
+        <img src="images/logo.svg" alt="logo">
 
-    <div class="navigation">
-        <nav>
-            <a href="home.html">Home Page</a>
-            <a href="budget.html">Budget</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </section>
+        <div class="navigation">
+            <nav>
+                <a href="home.html">Home Page</a>
+                <a href="budget.html">Budget</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </section> 
 
     <main>
         <section>
             <fieldset>
-            <legend>Building Information</legend>
+                <legend>Building Information</legend>
                 <form id="form" action="submited.html" method="get">
-                    <!-- Facility Info-->
-                    <section>
-                    <label>Building Type:
-                        <select name="typeOfBuilding" id="typeOfBuilding" required>
-                            <option disabled selected>Select the facility type...</option>
-                            <option>Residential</option>
-                            <option>Commercial</option>
-                            <option>Industrial</option>
-                            <option>Institutional</option>
-                            <option>Recreational</option>
-                            <option>Mixed-Use</option>
-                            <option>Skyscrapers</option>
-                            <option>Historic</option>
-                            <option>Smart Buildings</option>
-                            <option>Temporary Structures</option>                        
-                        </select>
-                    </label>
+                    <!-- Facility Info -->
+                    <div>
+                        <label>Building Type:
+                            <select name="typeOfBuilding" id="typeOfBuilding" required>
+                                <option value="" disabled selected>Select the facility type...</option>                     
+                            </select>
+                        </label>
 
-            <label>Building Size:
-                <select name="sizeOfBuilding" id="sizeOfBuilding" required>
-                    <option disabled selected>Select the size of the facility...</option>
-                    <option>1 m³ - 50 m³</option>
-                    <option>51 m³ - 100 m³</option>
-                    <option>101 m³ - 250 m³</option>
-                    <option>251 m³ - 500 m³</option>
-                    <option>501 m³ - 1000 m³</option>
-                    <option>1001 m³ - 2500 m³</option>
-                    <option>2501 m³ - 5000 m³</option>
-                    <option>5001 m³ - 10,000 m³</option>
-                    <option>10,001 m³ - 25,000 m³</option>
-                    <option>25,001 m³ - 50,000 m³</option>                
-                </select>
-            </label>
+                        <label>Building Size:
+                            <select name="sizeOfBuilding" id="sizeOfBuilding" required>
+                                <option value="" disabled selected>Select the size of the facility...</option>             
+                            </select>
+                        </label>
 
-            <label>
-                Adress: <input type="text" name="adress" id="adress" required>
-            </label>
+                        <label>
+                            Address: <input type="text" name="adress" id="adress" required>
+                        </label>
 
-            <label>
-                E-mail: <input type="email" name="email" id="email" required>
-            </label>
-        </section>
+                        <label>
+                            E-mail: <input type="email" name="email" id="email" required>
+                        </label>
+                    </div>
+                </form>
             </fieldset>
+        </section>
 
         <!-- Type of the paint -->
         <section>
@@ -95,13 +77,13 @@
                         <label><input type="checkbox" name="checkbox"> Textured</label>
                     </div>
                 </div>
-                </fieldset>
-            </section>
+            </fieldset>
+        </section>
 
-            <!-- Payment method-->
-            <section>
-                <fieldset class="payment">
-                    <legend>Payment Method</legend>
+        <!-- Payment method -->
+        <section>
+            <fieldset class="payment">
+                <legend>Payment Method</legend>
                 <label id="creditCardLabel">
                     <input type="radio" name="payment" id="creditCard" required> Credit Card
                 </label>
@@ -109,13 +91,12 @@
                 <label>
                     <input type="radio" name="payment" id="cash"> Cash
                 </label>
-            </section>
-
-                    <input type="submit" name="submit" id="submit" value="Send Info">
-                </form>
-                </fieldset>
+            </fieldset>
         </section>
 
+        <section>
+            <input type="submit" name="submit" id="submit" value="Send Info">
+        </section>
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> | Rian Cardoso Christani | Brazil - PR</p>
