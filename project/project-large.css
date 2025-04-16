@@ -1,0 +1,16 @@
+/* large view (like PC) */
+@media (min-width: 37.5rem){
+    *{
+        max-width: 900px;
+        justify-self: center;
+        margin: 0 auto;
+    }
+
+    .payment{
+        text-align: center;
+    }
+
+    .firstColumn{
+        padding: 1rem;
+    }
+}

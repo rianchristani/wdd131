@@ -8,36 +8,117 @@
     <meta name="description" content="Made by professinals">
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project-small.css">
+    <link rel="stylesheet" href="project-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Christani's Painting</h1>
-        <div class="navigation">
-            <nav>
-                <a href="home.html">Home Page</a>
-                <a href="budget.html">Budget</a>
-                <a href="contact.html">Contact Us</a>
-            </nav>
-        </div>
-    </header>
+    <section class="header">
+        <h1>Welcome! A place where your dreams come to life in vibrant colors.</h1>
+        <img src="logo.svg" alt="logo">
+
+    <div class="navigation">
+        <nav>
+            <a href="home.html">Home Page</a>
+            <a href="budget.html">Budget</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </section>
+
     <main>
         <section>
-            <h1>Budget</h1>
+            <fieldset>
+            <legend>Building Information</legend>
                 <form id="form" action="submited.html" method="get">
-                    <select name="typeOfBuilding" id="typeOfBuilding">
-                        <option disabled selected>Select the building type...</option>
-                    </select>
+                    <!-- Facility Info-->
+                    <section>
+                    <label>Building Type:
+                        <select name="typeOfBuilding" id="typeOfBuilding" required>
+                            <option disabled selected>Select the facility type...</option>
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Industrial</option>
+                            <option>Institutional</option>
+                            <option>Recreational</option>
+                            <option>Mixed-Use</option>
+                            <option>Skyscrapers</option>
+                            <option>Historic</option>
+                            <option>Smart Buildings</option>
+                            <option>Temporary Structures</option>                        
+                        </select>
+                    </label>
 
-                    
-                    <input type="submit" name="submit" id="submit" value="Send Message">
-                </form>
+            <label>Building Size:
+                <select name="sizeOfBuilding" id="sizeOfBuilding" required>
+                    <option disabled selected>Select the size of the facility...</option>
+                    <option>1 m³ - 50 m³</option>
+                    <option>51 m³ - 100 m³</option>
+                    <option>101 m³ - 250 m³</option>
+                    <option>251 m³ - 500 m³</option>
+                    <option>501 m³ - 1000 m³</option>
+                    <option>1001 m³ - 2500 m³</option>
+                    <option>2501 m³ - 5000 m³</option>
+                    <option>5001 m³ - 10,000 m³</option>
+                    <option>10,001 m³ - 25,000 m³</option>
+                    <option>25,001 m³ - 50,000 m³</option>                
+                </select>
+            </label>
+
+            <label>
+                Adress: <input type="text" name="adress" id="adress" required>
+            </label>
+
+            <label>
+                E-mail: <input type="email" name="email" id="email" required>
+            </label>
         </section>
+            </fieldset>
+
+        <!-- Type of the paint -->
         <section>
-            <h1>Your information</h1>
+            <fieldset>
+                <legend>Material Information</legend>
+                <div class="checkboxes">
+                    <div class="firstColumn">
+                        <label><input type="checkbox" name="checkbox"> Matte</label>
+                        <label><input type="checkbox" name="checkbox"> Eggshell</label>
+                        <label><input type="checkbox" name="checkbox"> Satin</label>
+                        <label><input type="checkbox" name="checkbox"> Semi-Gloss</label>
+                        <label><input type="checkbox" name="checkbox"> Gloss</label>
+                    </div>
+                    <div class="secondColumn">
+                        <label><input type="checkbox" name="checkbox"> High-Gloss</label>
+                        <label><input type="checkbox" name="checkbox"> Flat Enamel</label>
+                        <label><input type="checkbox" name="checkbox"> Pearl Finish</label>
+                        <label><input type="checkbox" name="checkbox"> Metallic</label>
+                        <label><input type="checkbox" name="checkbox"> Textured</label>
+                    </div>
+                </div>
+                </fieldset>
+            </section>
+
+            <!-- Payment method-->
+            <section>
+                <fieldset class="payment">
+                    <legend>Payment Method</legend>
+                <label id="creditCardLabel">
+                    <input type="radio" name="payment" id="creditCard" required> Credit Card
+                </label>
+
+                <label>
+                    <input type="radio" name="payment" id="cash"> Cash
+                </label>
+            </section>
+
+                    <input type="submit" name="submit" id="submit" value="Send Info">
+                </form>
+                </fieldset>
         </section>
+
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> 📸 Rian Cardoso Christani 📸 Brazil - PR</p>
+        <p>&copy;<span id="currentyear"></span> | Rian Cardoso Christani | Brazil - PR</p>
     </footer>
 </body>
 </html>

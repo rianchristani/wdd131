@@ -8,44 +8,68 @@
     <meta name="description" content="Made by professinals">
     <script src="project.js" defer></script>
     <link rel="stylesheet" href="project-small.css">
+    <link rel="stylesheet" href="project-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Christani's Painting</h1>
+    <section class="header">
+        <h1>Welcome! A place where your dreams come to life in vibrant colors.</h1>
+        <img src="logo.svg" alt="logo">
+
     <div class="navigation">
         <nav>
             <a href="home.html">Home Page</a>
             <a href="budget.html">Budget</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+    </section>
+
     </div>
     <main>
-        <section>
-            <h1>Leave a message to us</h1>
+        <section class="form">
+            <fieldset>
+            <legend>Leave a message to us</legend>
             <form id="form" action="submited.html" method="get">
-                <label for="fName">First Name:
+                <label for="fName">First Name: <br>
                     <input type="text" name="fName" id="fName" required>
                 </label>
-                <label for="lName">Last Name:
+                <label for="lName">Last Name: <br>
                     <input type="text" name="lName" id="lName" required>
                 </label>
-                <label for="email">E-mail:
+                <label for="email">E-mail: <br>
                     <input type="email" name="email" id="email" required>
                 </label>
-                <label for="subject">Subject:
+
+                <!-- Subjects -->
+                <label for="subject">Subject: <br>
                     <select name="subject" id="subject">
                         <option value="" disabled selected>Select a subject...</option>
+                        <option>Request a Quote</option>
+                        <option>Schedule a Consultation</option>
+                        <option>General Inquiry</option>
+                        <option>Project Status Update</option>
+                        <option>Color and Finish Advice</option>
+                        <option>Service Availability</option>
+                        <option>Customer Feedback</option>
+                        <option>Report an Issue</option>
+                        <option>Partnership or Business Inquiry</option>
+                        <option>Employment Opportunities</option>                    
                     </select>
                 </label>
-                <label>Your message:
-                    <textarea name="message" id="message"></textarea>
+
+                <label>Your message: <br>
+                    <textarea name="message" id="message" required></textarea>
                 </label>
 
                 <input type="submit" name="submit" id="submit" value="Send Message">
+            </fieldset>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy;<span id="currentyear"></span> 📸 Rian Cardoso Christani 📸 Brazil - PR</p>
+        <p>&copy;<span id="currentyear"></span> | Rian Cardoso Christani | Brazil - PR</p>
     </footer>
 </body>
 </html>
