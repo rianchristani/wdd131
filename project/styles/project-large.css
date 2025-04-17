@@ -13,4 +13,18 @@
     .firstColumn{
         padding: 1rem;
     }
+
+    .sideTemplate{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+    #firstSection{
+        grid-column: 1/2;
+        margin: .5rem;
+    }
+
+    #secondSection{
+        grid-column: 2/3;
+}
 }
