@@ -1,5 +1,5 @@
 /* large view (like PC) */
-@media (min-width: 37.5rem){
+@media (min-width: 40rem){
     *{
         max-width: 900px;
         justify-self: center;
